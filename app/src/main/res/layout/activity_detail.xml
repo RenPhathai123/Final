@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Order detail"
+    android:textSize="24dp"
+    android:textStyle="bold"
+    android:id="@+id/title"
+    android:textAlignment="center"/>
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/imageViewProduct"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/title"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic8" />
+
+
+
+            <!-- Product Name TextView -->
+            <TextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewProduct"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="Product name: Basketball"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Product Price TextView -->
+            <TextView
+                android:id="@+id/textViewProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductName"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:text="Price: $25"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceListItem" />
+            <!-- Product Description TextView -->
+            <TextView
+                android:id="@+id/textViewProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductPrice"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:text="This is a high-quality Basketball sourced from the best brand product."
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Product Availability TextView -->
+            <TextView
+                android:id="@+id/textViewProductAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductDescription"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:text="Status: Shipping"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Add to Cart Button -->
+            <Button
+                android:id="@+id/buttonAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_below="@id/textViewProductAvailability"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true" />
+
+            <!-- Buy Now Button -->
+            <Button
+                android:id="@+id/buttonBuyNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View shiping location"
+                android:layout_below="@id/buttonAddToCart"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <ImageView
+                android:id="@+id/imageViewProductmap"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/buttonBuyNow"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic10" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
